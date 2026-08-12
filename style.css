@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+html,
+body,
+[class*="css"],
+.stApp {
+    font-family: 'Inter', sans-serif;
+}
+
+div[data-testid="stMetricValue"] {
+    font-size: 2rem !important;
+    font-weight: 700 !important;
+    color: #00FFA3 !important;
+}
+
+div[data-testid="stMetricLabel"] {
+    font-size: 0.85rem !important;
+    font-weight: 600 !important;
+    color: #A0AEC0 !important;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+div[data-testid="metric-container"] {
+    background-color: #151A22;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 12px;
+    padding: 15px 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+div[data-testid="metric-container"]:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 30px rgba(108, 93, 211, 0.25);
+    border-color: rgba(108, 93, 211, 0.4);
+}
+
+.dashboard-title {
+    font-weight: 800 !important;
+    font-size: 2.8rem !important;
+    background: linear-gradient(135deg, #6C5DD3 0%, #00FFA3 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 0.2rem !important;
+}
+
+.dashboard-subtitle {
+    color: #A0AEC0 !important;
+    font-size: 1.1rem !important;
+    margin-bottom: 2rem !important;
+}
+
+h2,
+h3 {
+    font-weight: 600 !important;
+    color: #F3F4F6 !important;
+    border-bottom: 2px solid rgba(108, 93, 211, 0.15);
+    padding-bottom: 8px;
+    margin-top: 1.5rem !important;
+    margin-bottom: 1rem !important;
+}
+
+div[data-testid="stNotification"] {
+    background-color: #151A22 !important;
+    border: 1px solid rgba(108, 93, 211, 0.15) !important;
+    border-radius: 8px !important;
+    color: #F3F4F6 !important;
+}
+
+div[role="alert"] {
+    background-color: #151A22 !important;
+    border: 1px solid rgba(108, 93, 211, 0.2) !important;
+    border-radius: 8px !important;
+    color: #F3F4F6 !important;
+}
+
+div.stButton>button {
+    background: linear-gradient(135deg, #6C5DD3 0%, #5548B8 100%) !important;
+    color: white !important;
+    border-radius: 8px !important;
+    border: none !important;
+    padding: 10px 24px !important;
+    font-weight: 600 !important;
+    box-shadow: 0 4px 15px rgba(108, 93, 211, 0.3) !important;
+    transition: transform 0.2s, box-shadow 0.2s !important;
+}
+
+div.stButton>button:hover {
+    transform: translateY(-2px) !important;
+    box-shadow: 0 6px 20px rgba(108, 93, 211, 0.5) !important;
+}
